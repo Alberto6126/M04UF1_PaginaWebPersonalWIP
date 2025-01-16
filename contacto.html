@@ -3,6 +3,7 @@
         <link rel="stylesheet" href="contacto.css">
         <title>Contacto</title>
         <meta charset ="UTF-8">
+        <script src="scriptcontacto.js"></script>
     </head>
     <body>
         <nav id="navtop">
@@ -19,14 +20,14 @@
             <article id="contenedorForm">
                 <form>
                     <h2>Formulario de contacto</h2>
-                    <p>*Nombre:<input type="text" placeholder="Nombre"></p>
-                    <p>Fecha de nacimiento:<input type="date"></p>
-                    <p>*contacto:<input type="email" placeholder="ejemplo@gmail.com"></p>
-                    <p>Teléfono:<input type="tel" placeholder="+12 345 67 89 10"> </p>
-                    <p>Color Favorito:<input type="color"></p>
+                    <p>*Nombre:<input type="text" placeholder="Nombre" id="nombreForm" required></p>
+                    <p>Fecha de nacimiento:<input type="date" id="fechaForm"></p>
+                    <p>*contacto:<input type="email" placeholder="ejemplo@gmail.com" id="emailForm" required></p>
+                    <p>Teléfono:<input type="tel"  placeholder="+12 345 67 89 10" id="telefonoForm"> </p>
+                    <p>Color Favorito:<input type="color" id="colorForm"></p>
                     <p>Mensaje</p>
-                    <p id="contenedorMsg"><textarea name="texto" id="text"></textarea></p>
-                    <p id = "envio"><input type="submit"></p>
+                    <p id="contenedorMsg"><textarea name="texto" rows="10" id="mensajeForm" maxlength="400"></textarea></p>
+                    <p id = "envio"><input type="submit" id="envioForm" value="Enviar" onclick="asignacionVariables();"></p>
 
                 </form>
             </article>
