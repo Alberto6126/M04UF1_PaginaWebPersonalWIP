@@ -29,6 +29,11 @@ h1{
     text-transform:uppercase;
     width: 25%;
 }
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 header h2{
     width: 25%;
     padding: 0;
@@ -41,6 +46,9 @@ header h2{
     text-transform:uppercase;
     font-weight: lighter;
     text-align: inherit;
+}
+.boxes h3{
+    font-family: montserrat;
 }
 p{
     font-family: montserrat;
@@ -104,6 +112,37 @@ article h2{
 article:hover .pruebita{
     visibility: visible;
     transition: 0.5s;
+}
+.boxes{
+    position:relative;
+    width: 300px;
+    background-color: #EBEBEB;
+    margin: 10px;
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: rgb(115, 115, 115);
+    border-radius: 0px;
+    padding: 20px;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+    box-shadow: 13px 10px 10px gray;
+    height: fit-content;
+}
+.boxes img{
+    position: relative;
+    margin-left: 30px;
+    width: 180px;
+    box-shadow: 13px 10px rgb(208, 116, 231);
+}
+
+#perro{
+    width: 260px;
+    margin-left: -5px;
+}
+
+#coches{
+    width: 275px;
+    margin-left: -10px;
+    margin-top: 20px;
 }
 
 #contenedorForm {
