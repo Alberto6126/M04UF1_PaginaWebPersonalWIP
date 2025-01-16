@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
 
+
+
+
 body{
     margin: 0;
     background: rgb(241,230,255);
@@ -160,6 +163,8 @@ textarea:focus{
     margin-left: 0;
 }
 #logo{
+transition: 0.15s;
+opacity: 100%;
 width:100px;
 margin: 20px;
 margin-top: 20px;
@@ -167,3 +172,10 @@ margin-bottom: -40px;
 justify-content: left;
 position: absolute;
 }
+@media (max-width: 700px){
+    #logo{
+        transition: 0.15s;
+        opacity: 0%;
+    }
+}
+

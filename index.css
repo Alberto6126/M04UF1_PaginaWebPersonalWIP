@@ -120,10 +120,18 @@ article {
 }
 
 #logo{
-width:100px;
-margin: 20px;
-margin-top: 20px;
-margin-bottom: -40px;
-justify-content: left;
-position: absolute;
-}
+    transition: 0.15s;
+    opacity: 100%;
+    width:100px;
+    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    justify-content: left;
+    position: absolute;
+    }
+    @media (max-width: 700px){
+        #logo{
+            transition: 0.15s;
+            opacity: 0%;
+        }
+    }
