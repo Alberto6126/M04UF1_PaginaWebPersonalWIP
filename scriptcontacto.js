@@ -5,6 +5,12 @@ let telefono ="";
 let color ="";
 let mensaje="";
 
+
+function prueba(evento){
+    evento.preventDefault();
+    console.log("Procesando envio");
+}
+
 function asignacionVariables(){
 nombre = document.getElementById("nombreForm").value;
 email = document.getElementById("emailForm").value;
