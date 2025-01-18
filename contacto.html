@@ -18,7 +18,7 @@
         </nav>
         <main>
             <article id="contenedorForm">
-                <form>
+                <form action="enviado.html" onsubmit="envioForm(event);">
                     <h2>Formulario de contacto</h2>
                     <p>*Nombre:<input type="text" placeholder="Nombre" id="nombreForm" required></p>
                     <p>Fecha de nacimiento:<input type="date" id="fechaForm"></p>
@@ -27,7 +27,7 @@
                     <p>Color Favorito:<input type="color" id="colorForm"></p>
                     <p>Mensaje</p>
                     <p id="contenedorMsg"><textarea name="texto" rows="10" id="mensajeForm" maxlength="400"></textarea></p>
-                    <p id = "envio"><input type="submit" id="envioForm" value="Enviar" onclick="asignacionVariables();"></p>
+                    <p id = "envio"><input type="submit" id="envioForm" value="Enviar"></p>
 
                 </form>
             </article>
