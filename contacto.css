@@ -50,9 +50,12 @@ p{
     margin: 0;
 }
 footer{
+    position: relative;
+    opacity: 100%;
+    bottom: 0px;
+    width: 100%;
     background-color: #6E2594;
     margin: 0;
-    padding: 0;
 }
 
 #ultop{
@@ -113,12 +116,14 @@ article:hover .pruebita{
 form{
     background-color: #EBEBEB;
     width: fit-content; /* Ancho fijo para los artículos */
-    margin: 10px;
+    margin: 100px;
     outline-width: 2px;
     outline-style: solid;
     outline-color: rgb(115, 115, 115);
     border-radius: 0px;
-    padding: 20px;
+    padding: 30px;
+    padding-bottom: 0px;
+    padding-top: 0px;
     box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
     box-shadow: 13px 10px 10px gray;
 }

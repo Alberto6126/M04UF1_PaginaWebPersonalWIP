@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="contacto.css">
@@ -18,14 +19,14 @@
         </nav>
         <main>
             <article id="contenedorForm">
-                <form action="enviado.html" onsubmit="envioForm(event);">
+                <form method="post" action="index.html" onsubmit="prueba(event);">
                     <h2>Formulario de contacto</h2>
-                    <p>*Nombre:<input type="text" placeholder="Nombre" id="nombreForm" required></p>
-                    <p>Fecha de nacimiento:<input type="date" id="fechaForm"></p>
-                    <p>*contacto:<input type="email" placeholder="ejemplo@gmail.com" id="emailForm" required></p>
-                    <p>Teléfono:<input type="tel"  placeholder="+12 345 67 89 10" id="telefonoForm"> </p>
-                    <p>Color Favorito:<input type="color" id="colorForm"></p>
-                    <p>Mensaje</p>
+                    <p><label for="nombreForm">*Nombre:<input type="text" placeholder="Nombre" id="nombreForm" required></label></p>
+                    <p><label for="fechaForm">Fecha de nacimiento:<input type="date" id="fechaForm"></label></p>
+                    <p><label for="emailForm">*Contacto:<input type="email" placeholder="ejemplo@gmail.com" id="emailForm" required></label></p>
+                    <p><label for="telefonoForm">Teléfono:<input type="tel"  placeholder="+12 345 67 89 10" id="telefonoForm"></label></p>
+                    <p><label for="colorForm">Color Favorito:<input type="color" id="colorForm"></label></p>
+                    <p><label for="mensajeForm">Mensaje</label></p>
                     <p id="contenedorMsg"><textarea name="texto" rows="10" id="mensajeForm" maxlength="400"></textarea></p>
                     <p id = "envio"><input type="submit" id="envioForm" value="Enviar"></p>
 

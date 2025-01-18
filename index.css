@@ -45,9 +45,12 @@ p{
     margin: 0;
 }
 footer{
+    position: relative;
+    opacity: 100%;
+    bottom: 0px;
+    width: 100%;
     background-color: #6E2594;
     margin: 0;
-    padding: 0;
 }
 
 #ultop{
